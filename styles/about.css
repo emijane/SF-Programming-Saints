@@ -1,0 +1,298 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Inter", sans-serif;
+	background-color: #1f2024;
+}
+
+.nav {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	padding: 2rem;
+	backdrop-filter: blur(15px);
+	-webkit-backdrop-filter: blur(10px);
+	background-color: transparent;
+	box-shadow: 0 4px 20px -6px #222327;
+}
+
+.nav-items {
+	display: flex;
+	flex-direction: row;
+	gap: 5rem;
+	list-style-type: none;
+}
+
+.nav-items a {
+	color: white;
+	transition: all 0.2s ease-in-out;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.current a {
+	color: #23c476 !important;
+}
+
+.current a:hover {
+	color: white !important;
+}
+
+.nav-items a:hover {
+	color: #23c476;
+	cursor: pointer;
+}
+
+.about-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.about {
+	padding: 3rem;
+	padding-top: 10rem;
+	padding-bottom: 5rem;
+	width: 100%;
+	background-color: #28292e;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	gap: 5rem;
+}
+
+.about-wrap {
+	gap: 10rem;
+	display: flex;
+	flex-direction: row;
+}
+
+.about-text {
+	display: flex;
+	flex-direction: column;
+	color: white;
+	max-width: 40rem;
+}
+
+.about-text h1 {
+	font-size: 2.1rem;
+}
+
+.about-text p {
+	margin-top: 1.3rem;
+	font-size: 1rem;
+	line-height: 2.5rem;
+	opacity: 70%;
+}
+
+.svg {
+	max-width: 32rem;
+}
+
+.vision {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: white;
+	text-align: center;
+	max-width: 55rem;
+}
+
+.vision h3 {
+	font-size: 1.6rem;
+}
+
+#vision-icon {
+	margin-right: 1rem;
+}
+
+.vision p {
+	margin-top: 1.3rem;
+	font-size: 1rem;
+	line-height: 2.5rem;
+	opacity: 70%;
+}
+
+#arrow_down {
+	color: white;
+	font-size: 2rem;
+	animation-name: arrow_down;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes arrow_down {
+	from {
+		transform: translate(0, 0px);
+	}
+	65% {
+		transform: translate(0, 10px);
+	}
+	to {
+		transform: translate(0, -0px);
+	}
+}
+
+#arrow_down:hover {
+	cursor: pointer;
+}
+
+.services {
+	height: 100vh;
+	padding: 3rem;
+	background-color: #242529;
+	padding-top: 2rem;
+	padding-bottom: 5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+
+.services-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.services h2 {
+	font-size: 2rem;
+}
+
+.services p {
+	margin-top: 1.3rem;
+	font-size: 1rem;
+	line-height: 2rem;
+	opacity: 70%;
+}
+
+.service-box {
+	display: flex;
+	justify-content: center;
+}
+
+.service-box ul {
+	max-width: 70rem;
+	margin-top: 3rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	list-style-type: none;
+	gap: 2rem;
+	flex-wrap: wrap;
+}
+
+.service-box li {
+	max-width: 20rem;
+	border: 1px solid rgb(255, 255, 255, 0.2);
+	border-radius: 0.3rem;
+	padding: 2rem;
+}
+
+.service-box h3 {
+	margin-top: 1rem;
+	font-size: 1.4rem;
+}
+
+#service-icon {
+	font-size: 2rem;
+}
+
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 1.5rem;
+	background-color: #28292e;
+	color: white;
+}
+
+footer p {
+	opacity: 70%;
+}
+
+.foot-links {
+	display: flex;
+	flex-direction: row;
+	gap: 0.7rem;
+}
+
+.f-link a {
+	color: #bcbdbe;
+	font-size: 1.2rem;
+	margin-right: 2rem;
+	transition: all 0.2s ease-in-out;
+}
+
+.f-link a:hover {
+	cursor: pointer;
+	color: #23c476;
+	transition: all 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 1300px) {
+	.about-wrap {
+		flex-direction: column-reverse;
+	}
+	.about {
+		gap: 3rem;
+		flex-direction: column;
+		text-align: center;
+		height: auto;
+	}
+
+	.about-text h1 {
+		font-size: 2.3rem;
+	}
+	.svg {
+		display: none;
+	}
+	.services {
+		height: auto;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+}
+@media only screen and (max-width: 600px) {
+	.about {
+		margin-top: 0rem;
+	}
+
+	.about-text h1 {
+		font-size: 2rem;
+	}
+
+	.about-text p {
+		margin-top: 2rem;
+		font-size: 1rem;
+	}
+
+	.svg {
+		display: none;
+	}
+
+	footer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+	}
+}

@@ -1,0 +1,384 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Inter", sans-serif;
+	background-color: #1f2024;
+}
+
+.nav {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	padding: 2rem;
+	backdrop-filter: blur(15px);
+	-webkit-backdrop-filter: blur(10px);
+	background-color: transparent;
+	box-shadow: 0 4px 7px -6px #222327;
+}
+
+.nav-items {
+	display: flex;
+	flex-direction: row;
+	gap: 5rem;
+	list-style-type: none;
+}
+
+.nav-items a {
+	color: white;
+	transition: all 0.2s ease-in-out;
+	font-weight: 500;
+	text-decoration: none;
+}
+.current a {
+	color: #23c476 !important;
+}
+
+.current a:hover {
+	color: white !important;
+}
+
+.nav-items a:hover {
+	color: #23c476;
+	cursor: pointer;
+}
+
+.home-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+
+.cover {
+	position: relative;
+	text-align: center;
+}
+
+.cover img {
+	backdrop-filter: blur(13px);
+	-webkit-backdrop-filter: blur(13px);
+	height: 30rem;
+	width: 100%;
+	object-fit: cover;
+}
+
+.cover-text {
+	width: 100%;
+	margin-top: 2.5rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.cover-text h1 {
+	font-weight: 600;
+	color: white;
+	font-size: 4rem;
+	transition: all 0.2s ease-in-out;
+}
+
+.cover-text h2 {
+	margin-top: 2rem;
+	font-size: 1.6rem;
+	color: white;
+	transition: all 0.2s ease-in-out;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+:root {
+	--ti-cursor-color: white;
+}
+
+.links {
+	margin-top: 2.5rem;
+	font-size: 1.7rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 2.5rem;
+}
+
+.link a {
+	color: white;
+	transition: all 0.2s ease-in-out;
+}
+
+.link a:hover {
+	cursor: pointer;
+	color: #23c476;
+}
+
+.link img {
+	width: 1.8rem;
+}
+
+.discord {
+	border-radius: 1rem;
+	padding: 1.3rem;
+	background-color: #23c476;
+	transition: all 0.3s ease-in-out;
+}
+
+.discord:hover {
+	transform: translateY(-3px);
+	cursor: pointer;
+}
+
+.discord a {
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 1.2rem;
+	color: #fff;
+}
+
+#disc {
+	font-size: 1.2rem;
+	margin-right: 0.8rem;
+}
+
+.mission {
+	margin-top: 7rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: white;
+	text-align: center;
+	max-width: 55rem;
+}
+
+.mission h3 {
+	font-size: 1.9rem;
+}
+
+#mission-icon {
+	margin-right: 1rem;
+}
+
+.mission p {
+	margin-top: 1.3rem;
+	font-size: 1.2rem;
+	line-height: 2.5rem;
+	opacity: 70%;
+}
+
+.club-details {
+	gap: 10rem;
+	margin-top: 12rem;
+}
+
+#programmer {
+	margin-top: 15rem;
+	display: flex;
+	flex-direction: row;
+}
+
+#team {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+#team-svg {
+	width: 25rem;
+}
+
+#computer {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 8rem;
+}
+
+.club-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 35rem;
+	color: white;
+}
+
+.club-text h3 {
+	font-size: 1.7rem;
+}
+
+.club-text p {
+	margin-top: 1.3rem;
+	font-size: 1.1rem;
+	line-height: 2.5rem;
+	opacity: 70%;
+}
+
+.svg {
+	width: 30rem;
+}
+
+.learn-more {
+	margin-top: 1rem;
+	color: white;
+	opacity: 90%;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+}
+
+.learn-more:hover {
+	color: #23c476;
+}
+
+#learn-icon {
+	margin-left: 0.8rem;
+	color: #23c476;
+	animation-name: floating;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+	0% {
+		transform: translate(0, 0px);
+	}
+	50% {
+		transform: translate(3px);
+	}
+	100% {
+		transform: translate(0, 0px);
+	}
+}
+
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 1.5rem;
+	background-color: #28292e;
+	color: white;
+}
+
+footer p {
+	opacity: 70%;
+}
+
+.foot-links {
+	display: flex;
+	flex-direction: row;
+	gap: 0.7rem;
+}
+
+.f-link a {
+	color: #bcbdbe;
+	font-size: 1.2rem;
+	margin-right: 2rem;
+	transition: all 0.2s ease-in-out;
+}
+
+.f-link a:hover {
+	cursor: pointer;
+	color: #23c476;
+	transition: all 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 1200px) {
+	.cover-text h1 {
+		font-size: 3.5rem;
+	}
+
+	.club-details {
+		gap: 5rem;
+		flex-direction: row-reverse;
+	}
+
+	.svg {
+		width: 25rem;
+	}
+
+	#team-svg {
+		width: 20rem;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.cover-text h1 {
+		font-size: 2.5rem;
+	}
+
+	.cover-text h2 {
+		font-size: 1.3rem;
+		font-weight: 500;
+	}
+	#programmer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#team {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#computer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.club-text {
+		text-align: center;
+	}
+
+	.svg {
+		width: 20rem;
+	}
+	footer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.cover-text h1 {
+		font-size: 2rem;
+	}
+
+	.cover-text h2 {
+		font-size: 1.2rem;
+		font-weight: 500;
+	}
+
+	.links {
+		font-size: 1.4rem;
+	}
+
+	.discord {
+		padding: 1.2rem;
+	}
+
+	.discord a {
+		font-size: 1rem;
+	}
+
+	.mission {
+		width: 100%;
+	}
+}

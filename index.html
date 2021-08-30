@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/home.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/bfd3987de4.js" crossOrigin="anonymous"></script>
+    <script src="https://unpkg.com/typeit@8.0.1/dist/index.umd.js"></script>
+    <title>The Programming Saints</title>
+</head>
+
+<body>
+    <header class="nav">
+        <ul class="nav-items">
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="pages/about.html">About Us</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </header>
+
+    <main data-aos="fade-down" data-aos-duration="1000">
+        <div class="cover">
+            <img src="images/code.jpg">
+            <div class="cover-text">
+                <h1>The Programming Saints</h1>
+                <h2 id="typewrite"></h2>
+                <div class="links">
+                    <div class="link"><a href="https://github.com/Programming-Saints" target="_blank"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+                    <div class="link"><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></div>
+                    <div class="link"><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></div>
+                    <div class="link"><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></div>
+                    <div class="link"><a href="#" target="_blank"><i class="far fa-envelope"></i></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="home-content">
+            <div class="discord"><a href="https://discord.gg/SrG8W7DkeR">
+                    <i id="disc" class="fab fa-discord"></i>
+                    Join Our Discord</a>
+            </div>
+            <div class="mission">
+                <h3><i id="mission-icon" class="fad fa-bullseye-arrow"></i>Our Mission</h3>
+                <p>Our mission is to make the connection between education and application of skills to prepare for
+                    entering the development industry. It’s also to demystify programming by helping students and the
+                    community to better understand what programming is and how to use it.
+                </p>
+            </div>
+
+            <div data-aos="fade-left" data-aos-duration="1000" id="programmer" class="club-details">
+                <img class="svg" src="images/programmer.svg" alt="Programmer">
+                <div class="club-text">
+                    <h3>Are you eager to learn?</h3>
+                    <p>With collaboration amongst other club members, guest speakers, and working on real projects, you
+                        can develop vital programming skills, and create important connections with peers that you will
+                        need in your career.
+                    </p>
+                    <a class="learn-more" href="#">About Us<i id="learn-icon" class="fal fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div data-aos="fade-right" data-aos-duration="1000" id="team" class="club-details">
+                <img id="team-svg" class="svg" src="images/team.svg" alt="Team">
+                <div class="club-text">
+                    <h3>We have a spot for everybody!</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae possimus voluptates modi
+                        dolore illum, tempore non eaque corrupti esse exercitationem.</p>
+                    <a class="learn-more" href="#">Our Team<i id="learn-icon" class="fal fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div data-aos="fade-left" data-aos-duration="1000" id="computer" class="club-details">
+                <img class="svg" src="images/computer.svg" alt="Computer">
+                <div class="club-text">
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sapiente illo voluptatum rerum
+                        non
+                        sequi
+                        facilis sint laudantium blanditiis excepturi.</p>
+                    <a class="learn-more" href="#">Our Services<i id="learn-icon" class="fal fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>2021 © Santa Fe College's Programming Saints</p>
+        <div class="foot-links">
+            <div class="f-link"><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></div>
+            <div class="f-link"><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></div>
+            <div class="f-link"><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></div>
+            <div class="f-link"><a href="#" target="_blank"><i class="far fa-envelope"></i></a></div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/type.js"></script>
+</body>
+
+</html>

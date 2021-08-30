@@ -9,7 +9,7 @@ body {
 	background-color: #1f2024;
 }
 
-.nav {
+#nav {
 	display: flex;
 	justify-content: center;
 	flex-direction: row;
@@ -25,14 +25,14 @@ body {
 	box-shadow: 0 4px 20px -6px #222327;
 }
 
-.nav-items {
+#nav-items {
 	display: flex;
 	flex-direction: row;
 	gap: 5rem;
 	list-style-type: none;
 }
 
-.nav-items a {
+#nav-items a {
 	color: white;
 	transition: all 0.2s ease-in-out;
 	font-weight: 500;
@@ -246,6 +246,10 @@ footer p {
 	transition: all 0.2s ease-in-out;
 }
 
+#mobile_menu {
+	display: none;
+}
+
 @media only screen and (max-width: 1300px) {
 	.about-wrap {
 		flex-direction: column-reverse;
@@ -294,5 +298,11 @@ footer p {
 		justify-content: center;
 		align-items: center;
 		gap: 1rem;
+	}
+	#nav {
+		display: none;
+	}
+	#mobile_menu {
+		display: block;
 	}
 }

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/team.css">
+    <link rel="stylesheet" href="../styles/slicknav.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/bfd3987de4.js" crossOrigin="anonymous"></script>
+    <script src="https://unpkg.com/typeit@8.0.1/dist/index.umd.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#nav').slicknav({ prependTo: "#mobile_menu" });
+        });
+    </script>
+    <title>The Programming Saints</title>
+</head>
+
+<body>
+    <header>
+        <nav id="mobile_menu"></nav>
+        <nav id="nav">
+            <ul id="nav-items">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="current"><a href="team.html">Team</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main data-aos="fade-down" data-aos-duration="1000">
+        <div class="team-content">
+
+            <!-- Officers -->
+            <!-- This is hard coded for now, so I gave all of them elements the member class (for styling reasons)-->
+            <div class="team-text">
+                <div class="officer-text">
+                    <h1>Our Team</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, iusto?</p>
+                    <h2><i id="icon" class="fas fa-briefcase"></i>Officers</h2>
+                </div>
+            </div>
+            <div id="officers" class="members">
+                <div class="member">
+                    <img class="member-img" src="/images/team/president.jpg">
+                    <h3>Jane Doe</h3>
+                    <div class="member-title">President</div>
+                </div>
+                <div class="member">
+                    <img class="member-img" src="/images/team/vice-president.jpg">
+                    <h3>Jane Doe</h3>
+                    <div class="member-title">Vice President</div>
+                </div>
+                <div class="member">
+                    <img class="member-img" src="/images/team/treasurer.jpg">
+                    <h3>Jane Doe</h3>
+                    <div class="member-title">Teasurer</div>
+                </div>
+                <div class="member">
+                    <img class="member-img" src="/images/team/secretary.jpg">
+                    <h3>Jane Doe</h3>
+                    <div class="member-title">Secretary</div>
+                </div>
+                <div class="member">
+                    <img class="member-img" src="/images/team/senator.jpg">
+                    <h3>Jane Doe</h3>
+                    <div class="member-title">Senator</div>
+                </div>
+            </div>
+
+            <!-- Members -->
+            <div class="team-text">
+                <h2><i id="icon" class="fas fa-user-friends"></i>Members</h2>
+            </div>
+            <div class="members">
+                <div class="member">
+                    <img class="member-img" src="/images/team/president.jpg">
+                    <h3>Jane Doe</h3>
+                    <div class="member-title">Title</div>
+                </div>
+                <div class="member">
+                    <img class="member-img" src="/images/team/president.jpg">
+                    <h3>Jane Doe</h3>
+                    <div class="memberr-title">Title</div>
+                </div>
+                <div class="member">
+                    <img class="member-img" src="/images/team/president.jpg">
+                    <h3>Jane Doe</h3>
+                    <div class="member-title">Title</div>
+                </div>
+                <div class="member">
+                    <img class="member-img" src="/images/team/president.jpg">
+                    <h3>Jane Doe</h3>
+                    <div class="member-title">Title</div>
+                </div>
+                <div class="member">
+                    <img class="member-img" src="/images/team/president.jpg">
+                    <h3>Jane Doe</h3>
+                    <div class="member-title">Title</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>2021 © Santa Fe College's Programming Saints</p>
+        <div class="foot-links">
+            <div class="f-link"><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></div>
+            <div class="f-link"><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></div>
+            <div class="f-link"><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></div>
+            <div class="f-link"><a href="#" target="_blank"><i class="far fa-envelope"></i></a></div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="../js/scroll.js"></script>
+</body>
+
+</html>

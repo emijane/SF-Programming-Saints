@@ -53,9 +53,8 @@ body {
 }
 
 .team-content {
-	margin-top: 9rem;
+	margin-top: 6rem;
 	margin-bottom: 5rem;
-	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

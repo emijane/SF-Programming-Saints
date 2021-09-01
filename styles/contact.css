@@ -43,15 +43,26 @@ body {
 	color: #23c476 !important;
 }
 
+<<<<<<< Updated upstream
 .current a:hover {
 	color: white !important;
 }
 
 .nav-items a:hover {
+=======
+.current a:hover,
+.current a:focus {
+	color: white !important;
+}
+
+.nav-items a:hover,
+.nav-items a:focus {
+>>>>>>> Stashed changes
 	color: #23c476;
 	cursor: pointer;
 }
 
+<<<<<<< Updated upstream
 .news-container {
     display: flex;
     justify-content: center;
@@ -63,6 +74,102 @@ body {
     padding-left: 3rem;
     padding-right: 3rem;
     padding-bottom: 6rem;
+=======
+.contact-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 5rem;
+	padding: 2rem;
+	height: 100vh;
+	color: white;
+	gap: 3rem;
+}
+
+#icon {
+	margin-right: 1rem;
+}
+
+.cont-wrap {
+	background-color: #28292e;
+}
+
+.contact-info {
+	background-color: #28292e;
+	padding: 3rem;
+	border-radius: 2rem;
+}
+
+.contact-info h2 {
+	text-align: center;
+}
+
+.contact-info ul {
+	font-size: 1.2rem;
+	margin-top: 2.3rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.contact-info li {
+	list-style-type: none;
+}
+
+.disc-wrap {
+	display: flex;
+	justify-content: center;
+}
+
+.discord {
+	margin-top: 3rem;
+	border-radius: 1rem;
+	padding: 1rem;
+	max-width: 15rem;
+	background-color: #23c476;
+	transition: all 0.3s ease-in-out;
+}
+
+.discord:hover {
+	transform: translateY(-3px);
+	cursor: pointer;
+}
+
+.discord a {
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 1.2rem;
+	color: #fff;
+}
+
+#disc {
+	font-size: 1.2rem;
+	margin-right: 0.8rem;
+}
+
+.links {
+	margin-top: 3rem;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 2.3rem;
+}
+
+.link a {
+	color: white;
+	transition: all 0.2s ease-in-out;
+}
+
+.link a:hover {
+	cursor: pointer;
+	color: #23c476;
+}
+
+.link img {
+	width: 1.8rem;
+>>>>>>> Stashed changes
 }
 
 .news-post {
@@ -150,16 +257,17 @@ footer p {
 }
 
 @media only screen and (max-width: 1000px) {
-    #nav {
+	#nav {
 		display: none;
 	}
 	#mobile_menu {
 		display: block;
 	}
 
-    .news-container {
-        padding-top: 2rem;
-    }
+	.contact-container {
+		margin-top: 0;
+		padding-top: 2rem;
+	}
 }
 @media only screen and (max-width: 600px) {
 	footer {

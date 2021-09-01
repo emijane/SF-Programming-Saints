@@ -180,11 +180,16 @@ body {
 
 .club-details {
 	gap: 10rem;
-	margin-top: 12rem;
 }
 
+.vec-wrap {
+	margin-top: 20rem;
+	margin-bottom: 10rem;
+	display: flex;
+	flex-direction: column;
+	gap: 10rem;
+}
 #programmer {
-	margin-top: 15rem;
 	display: flex;
 	flex-direction: row;
 }
@@ -201,7 +206,11 @@ body {
 #computer {
 	display: flex;
 	flex-direction: row;
-	margin-bottom: 8rem;
+}
+
+#event {
+	display: flex;
+	flex-direction: row-reverse;
 }
 
 .club-text {

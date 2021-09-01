@@ -43,17 +43,17 @@ body {
 	color: #23c476 !important;
 }
 
-.current a:hover {
+.current a:hover, .current a:focus {
 	color: white !important;
 }
 
-.nav-items a:hover,
-.nav-items a:focus {
+.nav-items a:hover, .nav-items a:focus {
 	color: #23c476;
 	cursor: pointer;
 }
 
 .contact-container {
+
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -191,6 +191,14 @@ body {
 	margin-bottom: 1rem;
 	border-radius: 1rem;
 }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0 0 0;
+    height: 100vh;
+}
+
 
 footer {
 	display: flex;

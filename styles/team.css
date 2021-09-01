@@ -54,7 +54,7 @@ body {
 
 .team-content {
 	padding: 2rem;
-	margin-top: 4rem;
+	margin-top: 6rem;
 	margin-bottom: 5rem;
 	display: flex;
 	flex-direction: column;
@@ -79,7 +79,7 @@ body {
 }
 
 .team-text h2 {
-	margin-top: 4rem;
+	margin-top: 7rem;
 	margin-bottom: 1.5rem;
 }
 
@@ -97,7 +97,7 @@ body {
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
-	gap: 3rem;
+	gap: 5rem;
 	margin-top: 2rem;
 }
 

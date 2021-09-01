@@ -60,10 +60,20 @@ body {
 	gap: 2.3rem;
 	align-items: center;
 	color: white;
-	padding-top: 7rem;
+	padding-top: 8rem;
 	padding-left: 3rem;
 	padding-right: 3rem;
 	padding-bottom: 6rem;
+}
+
+.text-wrap {
+	margin-top: 0.2rem;
+	line-height: 2.5rem;
+}
+
+.p-text {
+	margin-top: 1rem;
+	opacity: 70%;
 }
 
 .event-post {
@@ -94,9 +104,6 @@ body {
 	color: #23c476;
 }
 
-.event-post p {
-	opacity: 70%;
-}
 
 .event-post img {
 	width: 100%;

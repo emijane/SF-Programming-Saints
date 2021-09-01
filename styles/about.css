@@ -39,17 +39,17 @@ body {
 	text-decoration: none;
 }
 
+#nav-items a:hover {
+	color: #23c476;
+	cursor: pointer;
+}
+
 .current a {
 	color: #23c476 !important;
 }
 
 .current a:hover {
 	color: white !important;
-}
-
-.nav-items a:hover {
-	color: #23c476;
-	cursor: pointer;
 }
 
 .about-content {

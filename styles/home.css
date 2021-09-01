@@ -46,7 +46,7 @@ body {
 	color: white !important;
 }
 
-.nav-items a:hover {
+#nav-items a:hover {
 	color: #23c476;
 	cursor: pointer;
 }

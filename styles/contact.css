@@ -53,12 +53,152 @@ body {
 }
 
 .contact-container {
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 5rem;
+	padding: 2rem;
+	height: 100vh;
+	color: white;
+	gap: 3rem;
+}
+
+#icon {
+	margin-right: 1rem;
+}
+
+.cont-wrap {
+	background-color: #28292e;
+}
+
+.contact-info {
+	background-color: #28292e;
+	padding: 3rem;
+	border-radius: 2rem;
+}
+
+.contact-info h2 {
+	text-align: center;
+}
+
+.contact-info ul {
+	font-size: 1.2rem;
+	margin-top: 2.3rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.contact-info li {
+	list-style-type: none;
+}
+
+.disc-wrap {
+	display: flex;
+	justify-content: center;
+}
+
+.discord {
+	margin-top: 3rem;
+	border-radius: 1rem;
+	padding: 1rem;
+	max-width: 15rem;
+	background-color: #23c476;
+	transition: all 0.3s ease-in-out;
+}
+
+.discord:hover {
+	transform: translateY(-3px);
+	cursor: pointer;
+}
+
+.discord a {
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 1.2rem;
+	color: #fff;
+}
+
+#disc {
+	font-size: 1.2rem;
+	margin-right: 0.8rem;
+}
+
+.links {
+	margin-top: 3rem;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 2.3rem;
+}
+
+.link a {
+	color: white;
+	transition: all 0.2s ease-in-out;
+}
+
+.link a:hover {
+	cursor: pointer;
+	color: #23c476;
+}
+
+.link img {
+	width: 1.8rem;
+}
+
+.news-post {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	max-width: 40rem;
+	gap: 1rem;
+	background-color: #28292e;
+	padding: 2.5rem;
+	border-radius: 2rem;
+	box-shadow: 0px 0px 5px 3px rgb(0, 0, 0, 0.2);
+}
+
+#icon {
+	margin-right: 1rem;
+}
+
+.news-post a {
+	color: white;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+}
+
+.news-post a:hover {
+	color: #23c476;
+}
+
+.news-post p {
+	opacity: 70%;
+}
+
+.news-post img {
+	width: 100%;
+	height: 100%;
+	max-height: 20rem;
+	max-width: 40rem;
+	object-fit: cover;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	border-radius: 1rem;
+}
+
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 3rem 0 0 0;
     height: 100vh;
 }
+
 
 footer {
 	display: flex;
@@ -100,16 +240,17 @@ footer p {
 }
 
 @media only screen and (max-width: 1000px) {
-    #nav {
+	#nav {
 		display: none;
 	}
 	#mobile_menu {
 		display: block;
 	}
 
-    .news-container {
-        padding-top: 2rem;
-    }
+	.contact-container {
+		margin-top: 0;
+		padding-top: 2rem;
+	}
 }
 @media only screen and (max-width: 600px) {
 	footer {

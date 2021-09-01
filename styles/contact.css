@@ -43,38 +43,16 @@ body {
 	color: #23c476 !important;
 }
 
-<<<<<<< Updated upstream
 .current a:hover {
-	color: white !important;
-}
-
-.nav-items a:hover {
-=======
-.current a:hover,
-.current a:focus {
 	color: white !important;
 }
 
 .nav-items a:hover,
 .nav-items a:focus {
->>>>>>> Stashed changes
 	color: #23c476;
 	cursor: pointer;
 }
 
-<<<<<<< Updated upstream
-.news-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 2.3rem;
-    align-items: center;
-    color: white;
-    padding-top: 6rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-bottom: 6rem;
-=======
 .contact-container {
 	display: flex;
 	align-items: center;
@@ -169,31 +147,30 @@ body {
 
 .link img {
 	width: 1.8rem;
->>>>>>> Stashed changes
 }
 
 .news-post {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    max-width: 40rem;
-    gap: 1rem;
-    background-color: #28292e;
-    padding: 2.5rem;
-    border-radius: 2rem;
-    box-shadow: 0px 0px 5px 3px rgb(0, 0, 0, 0.2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	max-width: 40rem;
+	gap: 1rem;
+	background-color: #28292e;
+	padding: 2.5rem;
+	border-radius: 2rem;
+	box-shadow: 0px 0px 5px 3px rgb(0, 0, 0, 0.2);
 }
 
 #icon {
-    margin-right: 1rem;
+	margin-right: 1rem;
 }
 
 .news-post a {
-    color: white;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
+	color: white;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
 }
 
 .news-post a:hover {
@@ -201,20 +178,19 @@ body {
 }
 
 .news-post p {
-    opacity: 70%;
+	opacity: 70%;
 }
 
 .news-post img {
-    width: 100%;
-    height: 100%;
-    max-height: 20rem;
-    max-width: 40rem;
-    object-fit: cover;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 1rem;
+	width: 100%;
+	height: 100%;
+	max-height: 20rem;
+	max-width: 40rem;
+	object-fit: cover;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	border-radius: 1rem;
 }
-
 
 footer {
 	display: flex;
@@ -223,7 +199,6 @@ footer {
 	padding: 1.5rem;
 	background-color: #28292e;
 	color: white;
-
 }
 
 footer p {

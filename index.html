@@ -31,7 +31,12 @@
 
     <main data-aos="fade-down" data-aos-duration="1000">
         <div class="cover">
-            <img src="images/code.jpg">
+            <picture>
+                <source
+                    srcset="images/code_inverted.jpg"
+                    media="(prefers-color-scheme: dark)">
+                <img src="images/code.jpg" alt="Abstract background of computer and code.">
+            </picture>
             <div class="cover-text">
                 <h1>The Programming Saints</h1>
                 <h2 id="typewrite"></h2>

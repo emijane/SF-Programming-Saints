@@ -1,3 +1,30 @@
+@media (prefers-color-scheme: light) {
+	:root {
+		--color_background_body: #ffffff;
+		--color_background_about:#ffffff;
+		--color_background_footer: #ffffff;
+		--color_service_box_border: rgba(255, 255, 255, 0.8);
+		--color_visible_100: #1f2024;
+		--color_contrast_75: #ffffff;
+		--color_link: #3b3b3b;
+		--color_accent_1:#13633c;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color_background_body: #1f2024;
+		--color_background_about:#28292e;
+		--color_background_services: #242529;
+		--color_background_footer: #28292e;
+		--color_service_box_border: rgb(255, 255, 255, 0.2);
+		--color_visible_100: #ffffff;
+		--color_contrast_75: #222327;
+		--color_link: #bcbdbe;
+		--color_accent_1:#23c476;
+	}
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -6,7 +33,7 @@
 
 body {
 	font-family: "Inter", sans-serif;
-	background-color: #1f2024;
+	background-color:var(--color_background_body);
 }
 
 .nav {
@@ -22,7 +49,7 @@ body {
 	backdrop-filter: blur(15px);
 	-webkit-backdrop-filter: blur(10px);
 	background-color: transparent;
-	box-shadow: 0 4px 20px -6px #222327;
+	box-shadow: 0 4px 20px -6px var(--color_contrast_75);
 }
 
 .nav-items {
@@ -33,22 +60,22 @@ body {
 }
 
 .nav-items a {
-	color: white;
+	color: var(--color_visible_100);
 	transition: all 0.2s ease-in-out;
 	font-weight: 500;
 	text-decoration: none;
 }
 
 .current a {
-	color: #23c476 !important;
+	color: var(--color_accent_1) !important;
 }
 
 .current a:hover {
-	color: white !important;
+	color: var(--color_visible_100) !important;
 }
 
 .nav-items a:hover {
-	color: #23c476;
+	color: var(--color_accent_1);
 	cursor: pointer;
 }
 
@@ -64,7 +91,7 @@ body {
 	padding-top: 10rem;
 	padding-bottom: 5rem;
 	width: 100%;
-	background-color: #28292e;
+	background-color: var(--color_background_about);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -82,7 +109,7 @@ body {
 .about-text {
 	display: flex;
 	flex-direction: column;
-	color: white;
+	color: var(--color_visible_100);
 	max-width: 40rem;
 }
 
@@ -106,7 +133,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	color: white;
+	color: var(--color_visible_100);
 	text-align: center;
 	max-width: 55rem;
 }
@@ -127,7 +154,7 @@ body {
 }
 
 #arrow_down {
-	color: white;
+	color: var(--color_visible_100);
 	font-size: 2rem;
 	animation-name: arrow_down;
 	animation-duration: 2s;
@@ -154,7 +181,7 @@ body {
 .services {
 	height: 100vh;
 	padding: 3rem;
-	background-color: #242529;
+	background-color: var(--color_background_services);
 	padding-top: 2rem;
 	padding-bottom: 5rem;
 	display: flex;
@@ -162,7 +189,7 @@ body {
 	justify-content: center;
 	width: 100%;
 	text-align: center;
-	color: white;
+	color: var(--color_visible_100);
 }
 
 .services-text {
@@ -200,7 +227,7 @@ body {
 
 .service-box li {
 	max-width: 20rem;
-	border: 1px solid rgb(255, 255, 255, 0.2);
+	border: 1px solid var(--color_service_box_border);
 	border-radius: 0.3rem;
 	padding: 2rem;
 }
@@ -219,8 +246,8 @@ footer {
 	flex-direction: row;
 	justify-content: space-between;
 	padding: 1.5rem;
-	background-color: #28292e;
-	color: white;
+	background-color: var(--color_background_footer);
+	color: var(--color_visible_100);
 }
 
 footer p {
@@ -234,7 +261,7 @@ footer p {
 }
 
 .f-link a {
-	color: #bcbdbe;
+	color: var(--color_link);
 	font-size: 1.2rem;
 	margin-right: 2rem;
 	transition: all 0.2s ease-in-out;
@@ -242,7 +269,7 @@ footer p {
 
 .f-link a:hover {
 	cursor: pointer;
-	color: #23c476;
+	color: var(--color_accent_1);
 	transition: all 0.2s ease-in-out;
 }
 

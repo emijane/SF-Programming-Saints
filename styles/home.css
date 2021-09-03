@@ -1,13 +1,14 @@
 
+
 @media (prefers-color-scheme: light) {
 	:root {
-		--color_background_body: #1f2024;
-		--color_background_discord: #23c476;
-		--color_background_footer: #28292e;
-		--color_visible_100: #ffffff;
-		--color_contrast_75: #222327;
-		--color_link: #bcbdbe;
-		--color_accent_1:#23c476;
+		--color_background_body: #ffffff;
+		--color_background_discord: #13633c;
+		--color_background_footer: #ffffff;
+		--color_visible_100: #1f2024;
+		--color_contrast_75: #ffffff;
+		--color_link: #3b3b3b;
+		--color_accent_1:#13633c;
 	}
 }
 
@@ -22,7 +23,6 @@
 		--color_accent_1:#23c476;
 	}
 }
-
 
 
 * {

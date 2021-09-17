@@ -40,7 +40,7 @@ body {
 }
 
 .current a {
-	color: #23c476 !important;
+	color: #efba00 !important;
 }
 
 .current a:hover {
@@ -48,7 +48,7 @@ body {
 }
 
 #nav-items a:hover {
-	color: #23c476;
+	color: #efba00;
 	cursor: pointer;
 }
 
@@ -90,7 +90,7 @@ body {
 }
 
 .news-post a:hover {
-	color: #23c476;
+	color: #efba00;
 }
 
 .news-post p {
@@ -136,7 +136,7 @@ footer p {
 
 .f-link a:hover {
 	cursor: pointer;
-	color: #23c476;
+	color: #efba00;
 	transition: all 0.2s ease-in-out;
 }
 

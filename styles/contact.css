@@ -40,7 +40,7 @@ body {
 }
 
 .current a {
-	color: #23c476 !important;
+	color: #efba00 !important;
 }
 
 .current a:hover,
@@ -50,7 +50,7 @@ body {
 
 #nav-items a:hover,
 #nav-items a:focus {
-	color: #23c476;
+	color: #efba00;
 	cursor: pointer;
 }
 
@@ -105,7 +105,7 @@ body {
 	border-radius: 1rem;
 	padding: 1rem;
 	max-width: 15rem;
-	background-color: #23c476;
+	background-color: #efba00;
 	transition: all 0.3s ease-in-out;
 }
 
@@ -143,7 +143,7 @@ body {
 
 .link a:hover {
 	cursor: pointer;
-	color: #23c476;
+	color: #efba00;
 }
 
 .link img {
@@ -178,7 +178,7 @@ footer p {
 
 .f-link a:hover {
 	cursor: pointer;
-	color: #23c476;
+	color: #efba00;
 	transition: all 0.2s ease-in-out;
 }
 

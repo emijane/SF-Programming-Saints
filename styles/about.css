@@ -40,12 +40,12 @@ body {
 }
 
 #nav-items a:hover {
-	color: #23c476;
+	color: #efba00;
 	cursor: pointer;
 }
 
 .current a {
-	color: #23c476 !important;
+	color: #efba00 !important;
 }
 
 .current a:hover {
@@ -68,15 +68,32 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 5rem;
+	gap: 2rem;
+}
+
+.about h1 {
+	font-size: 2.3rem;
+	color: white;
+}
+
+#icon {
+	color: #efba00;
+	margin-right: 1rem;
 }
 
 .about-wrap {
-	gap: 10rem;
+	gap: 5rem;
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 }
 
+.about-wrap img {
+	width: 100%;
+	height: 100%;
+	max-width: 30rem;
+	border-radius: 1rem;
+}
 .about-text {
 	display: flex;
 	flex-direction: column;
@@ -89,10 +106,6 @@ body {
 	font-size: 1rem;
 	line-height: 2.5rem;
 	opacity: 70%;
-}
-
-.svg {
-	max-width: 25rem;
 }
 
 .vision {
@@ -201,6 +214,7 @@ body {
 }
 
 #service-icon {
+	color: #efba00;
 	font-size: 2rem;
 }
 
@@ -232,7 +246,7 @@ footer p {
 
 .f-link a:hover {
 	cursor: pointer;
-	color: #23c476;
+	color: #efba00;
 	transition: all 0.2s ease-in-out;
 }
 

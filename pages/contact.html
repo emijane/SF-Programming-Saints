@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="../styles/slicknav.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/bfd3987de4.js" crossOrigin="anonymous"></script>
+    <script src="https://unpkg.com/typeit@8.0.1/dist/index.umd.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#nav').slicknav({ prependTo: "#mobile_menu" });
+        });
+    </script>
+    <title>The Programming Saints</title>
+</head>
+
+<body>
+
+    <header>
+        <nav id="mobile_menu"></nav>
+        <nav id="nav">
+            <ul id="nav-items">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li class="current"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div data-aos="fade-down" data-aos-duration="1000" class="contact-container">
+            <h1><i id="icon" class="fas fa-id-card"></i>Contact Us</h1>
+            <div class="contact-info">
+                <h2>Contact Information:</h2>
+                <ul>
+                    <li><i id="icon" class="fas fa-envelope"></i><b>Club
+                            email:</b> example@gmail.com</li>
+                    <li><i id="icon" class="fas fa-envelope"></i><b>President:</b> example@gmail.com</a></li>
+                    <li><i id="icon" class="fas fa-envelope"></i><b>Vice President:</b> example@gmail.com</li>
+                </ul>
+                <div class="disc-wrap">
+                    <div class="discord"><a href="https://discord.gg/SrG8W7DkeR">
+                            <i id="disc" class="fab fa-discord"></i>
+                            Join Our Discord</a>
+                    </div>
+                </div>
+                <div class="links">
+                    <div class="link"><a href="https://github.com/Programming-Saints" target="_blank"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+                    <div class="link"><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></div>
+                    <div class="link"><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></div>
+                    <div class="link"><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>2021 © Santa Fe College's Programming Saints</p>
+        <div class="foot-links">
+            <div class="f-link"><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></div>
+            <div class="f-link"><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></div>
+            <div class="f-link"><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></div>
+            <div class="f-link"><a href="#" target="_blank"><i class="far fa-envelope"></i></a></div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Inter", sans-serif;
+	background-color: #1f2024;
+}
+
+#nav {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	padding: 2rem;
+	backdrop-filter: blur(15px);
+	-webkit-backdrop-filter: blur(10px);
+	background-color: transparent;
+	box-shadow: 0 4px 20px -6px #222327;
+}
+
+#nav-items {
+	display: flex;
+	flex-direction: row;
+	gap: 5rem;
+	list-style-type: none;
+}
+
+#nav-items a {
+	color: white;
+	transition: all 0.2s ease-in-out;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.current a {
+	color: #efba00 !important;
+}
+
+.current a:hover {
+	color: white !important;
+}
+
+#nav-items a:hover {
+	color: #efba00;
+	cursor: pointer;
+}
+
+main {
+	min-height: 100vh;
+}
+
+.team-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 7rem;
+	gap: 3rem;
+	color: white;
+}
+
+#icon {
+	margin-right: 0.5rem;
+	opacity: 70%;
+}
+
+
+.member-wrap {
+	display: flex;
+	gap: 2rem;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.member {
+	background-color: #28292e;
+	width: 18rem;
+	padding-bottom: 0.5rem;
+	border-radius: 0.5rem;
+}
+
+.member img {
+	border-radius: 0.5rem 0.5rem 0px 0px; 
+	width: 100%;
+	height: 100%;
+	height: 10rem;
+	object-fit: cover;
+}
+
+.member p {
+	margin-top: 0.7rem;
+	margin-bottom: 0.4rem;
+	margin-left: 1rem;
+}
+
+.name {
+	font-weight: 500;
+}
+
+.role {
+	color: black !important;
+	background-color: #efba00;
+	display: inline-block;
+	padding: 0.3rem;
+	border-radius: 0.3rem;
+	box-shadow: rgb(15 15 15 / 5%) 0px 0px 0px 1px, rgb(15 15 15 / 5%) 0px 2px 4px;
+}
+
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 1.5rem;
+	background-color: #28292e;
+	color: white;
+}
+
+footer p {
+	opacity: 70%;
+}
+
+.foot-links {
+	display: flex;
+	flex-direction: row;
+	gap: 0.7rem;
+}
+
+.f-link a {
+	color: #bcbdbe;
+	font-size: 1.2rem;
+	margin-right: 2rem;
+	transition: all 0.2s ease-in-out;
+}
+
+.f-link a:hover {
+	cursor: pointer;
+	color: #efba00;
+	transition: all 0.2s ease-in-out;
+}
+
+#mobile_menu {
+	display: none;
+}
+
+@media only screen and (max-width: 1300px) {
+}
+
+@media only screen and (max-width: 1000px) {
+	#nav {
+		display: none;
+	}
+	#mobile_menu {
+		display: block;
+	}
+	.team-content {
+		margin-top: 0;
+		align-items: none;
+		height: auto;
+	}
+}
+@media only screen and (max-width: 600px) {
+	footer {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+	}
+}

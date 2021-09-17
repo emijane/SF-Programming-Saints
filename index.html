@@ -9,30 +9,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/bfd3987de4.js" crossOrigin="anonymous"></script>
     <script src="https://unpkg.com/typeit@8.0.1/dist/index.umd.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#nav').slicknav({ prependTo: "#mobile_menu" });
+        });
+    </script>
     <title>The Programming Saints</title>
 </head>
 
 <body>
-    <header class="nav">
-        <ul class="nav-items">
-            <li class="current"><a href="index.html">Home</a></li>
-            <li><a href="pages/about.html">About Us</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
+
+    <header>
+        <nav id="mobile_menu"></nav>
+        <nav id="nav">
+            <ul id="nav-items">
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="pages/about.html">About Us</a></li>
+                <li><a href="pages/team.html">Team</a></li>
+                <li><a href="pages/news.html">News</a></li>
+                <li><a href="pages/events.html">Events</a></li>
+                <li><a href="pages/contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main data-aos="fade-down" data-aos-duration="1000">
         <div class="cover">
-            <img src="images/code.jpg">
+            <img src="images/home/group.png">
             <div class="cover-text">
+                <img class="logo" src="images/home/tps-logo.png" alt="logo">
                 <h1>The Programming Saints</h1>
                 <h2 id="typewrite"></h2>
                 <div class="links">
@@ -52,44 +65,62 @@
                     Join Our Discord</a>
             </div>
             <div class="mission">
-                <h3><i id="mission-icon" class="fad fa-bullseye-arrow"></i>Our Mission</h3>
+                <h3><i id="mission-icon" class="fas fa-bullseye-arrow"></i>Our Mission</h3>
                 <p>Our mission is to make the connection between education and application of skills to prepare for
                     entering the development industry. It’s also to demystify programming by helping students and the
                     community to better understand what programming is and how to use it.
                 </p>
             </div>
-
-            <div data-aos="fade-left" data-aos-duration="1000" id="programmer" class="club-details">
-                <img class="svg" src="images/programmer.svg" alt="Programmer">
-                <div class="club-text">
-                    <h3>Are you eager to learn?</h3>
-                    <p>With collaboration amongst other club members, guest speakers, and working on real projects, you
-                        can develop vital programming skills, and create important connections with peers that you will
-                        need in your career.
-                    </p>
-                    <a class="learn-more" href="#">About Us<i id="learn-icon" class="fal fa-arrow-right"></i></a>
+            <p data-aos="fade-in" class="join"><i id="mission-icon" class="fas fa-check"></i>Join Us!</p>
+            <div class="vec-wrap">
+                <div data-aos="fade-left" data-aos-duration="1000" id="programmer" class="club-details">
+                    <img class="svg" src="images/svg/learn.svg" alt="Programmer">
+                    <div class="club-text">
+                        <h3>Are you eager to learn?</h3>
+                        <p>With collaboration amongst other club members, guest speakers, and working on real projects,
+                            you
+                            can develop vital programming skills, and create important connections with peers that you
+                            will
+                            need in your career.
+                        </p>
+                        <a class="learn-more" href="pages/about.html">About Us<i id="learn-icon"
+                                class="fal fa-arrow-right"></i></a>
+                    </div>
                 </div>
-            </div>
 
-            <div data-aos="fade-right" data-aos-duration="1000" id="team" class="club-details">
-                <img id="team-svg" class="svg" src="images/team.svg" alt="Team">
-                <div class="club-text">
-                    <h3>We have a spot for everybody!</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae possimus voluptates modi
-                        dolore illum, tempore non eaque corrupti esse exercitationem.</p>
-                    <a class="learn-more" href="#">Our Team<i id="learn-icon" class="fal fa-arrow-right"></i></a>
+                <div data-aos="fade-right" data-aos-duration="1000" id="team" class="club-details">
+                    <img id="team-svg" class="svg" src="images/svg/team.svg" alt="Team">
+                    <div class="club-text">
+                        <h3>We have a spot for everybody!</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae possimus voluptates modi
+                            dolore illum, tempore non eaque corrupti esse exercitationem.</p>
+                        <a class="learn-more" href="pages/team.html">Our Team<i id="learn-icon"
+                                class="fal fa-arrow-right"></i></a>
+                    </div>
                 </div>
-            </div>
-
-            <div data-aos="fade-left" data-aos-duration="1000" id="computer" class="club-details">
-                <img class="svg" src="images/computer.svg" alt="Computer">
-                <div class="club-text">
-                    <h3>Lorem, ipsum dolor.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sapiente illo voluptatum rerum
-                        non
-                        sequi
-                        facilis sint laudantium blanditiis excepturi.</p>
-                    <a class="learn-more" href="#">Our Services<i id="learn-icon" class="fal fa-arrow-right"></i></a>
+                <div data-aos="fade-left" data-aos-duration="1000" id="computer" class="club-details">
+                    <img class="svg" src="images/svg/computer.svg" alt="Computer">
+                    <div class="club-text">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sapiente illo voluptatum rerum
+                            non
+                            sequi
+                            facilis sint laudantium blanditiis excepturi.</p>
+                        <a class="learn-more" href="pages/news.html">News<i id="learn-icon"
+                                class="fal fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div data-aos="fade-right" data-aos-duration="1000" id="event" class="club-details">
+                    <img class="svg" src="images/svg/event.svg" alt="Event">
+                    <div class="club-text">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sapiente illo voluptatum rerum
+                            non
+                            sequi
+                            facilis sint laudantium blanditiis excepturi.</p>
+                        <a class="learn-more" href="pages/events.html">Events<i id="learn-icon"
+                                class="fal fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -107,7 +138,6 @@
     <script>
         AOS.init();
     </script>
-    <script src="js/type.js"></script>
 </body>
 
 </html>

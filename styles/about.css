@@ -254,9 +254,10 @@ footer p {
 	display: none;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1000px) {
 	.about-wrap {
-		flex-direction: column-reverse;
+		flex-direction: column;
+		gap: 2rem;
 	}
 	.about {
 		gap: 3rem;

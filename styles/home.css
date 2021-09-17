@@ -192,7 +192,7 @@ body {
 
 .join {
 	color: white;
-	font-size: 2.5rem;
+	font-size: 2.3rem;
 	font-weight: 700;
 	margin-top: 13rem;
 }
@@ -256,7 +256,7 @@ body {
 }
 
 .learn-more:hover {
-	color: #23c476;
+	color: #efba00;
 }
 
 #learn-icon {

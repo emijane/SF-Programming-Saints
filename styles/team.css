@@ -57,13 +57,33 @@ main {
 }
 
 .team-content {
+	padding-left: 2rem;
+	padding-right: 2rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-top: 8rem;
-	gap: 3rem;
+	margin-top: 9rem;
+	gap: 1.5rem;
 	color: white;
+}
+
+.team-content h3 {
+	font-weight: 500;
+	font-size: 1.2rem;
+	opacity: 80%;
+}
+
+.line {
+	border-width: 0;
+	height: 2px;
+	border-width: 0;
+	background-color: white;
+	max-width: 15rem;
+	width: 15%;
+	opacity: 8%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 #icon {
@@ -71,12 +91,20 @@ main {
 	margin-right: 1rem;
 }
 
-
 .member-wrap {
+	margin-top: 2rem;
+}
+
+.member-text {
+	font-size: 1rem;
+}
+
+.members {
 	display: flex;
 	gap: 2rem;
 	justify-content: center;
 	flex-wrap: wrap;
+	margin-top: 1.5rem;
 }
 
 .member {
@@ -84,10 +112,16 @@ main {
 	width: 18rem;
 	padding-bottom: 0.5rem;
 	border-radius: 0.5rem;
+	transition: all 0.2s ease-in-out;
+}
+
+.member:hover {
+	transform: translateY(-4px);
+	cursor: pointer;
 }
 
 .member img {
-	border-radius: 0.5rem 0.5rem 0px 0px; 
+	border-radius: 0.5rem 0.5rem 0px 0px;
 	width: 100%;
 	height: 100%;
 	height: 10rem;
@@ -105,12 +139,14 @@ main {
 }
 
 .role {
+	font-weight: 500;
 	color: black !important;
-	background-color: #efba00;
+	background-color: rgb(255, 255, 255, 0.8);
 	display: inline-block;
 	padding: 0.3rem;
 	border-radius: 0.3rem;
-	box-shadow: rgb(15 15 15 / 5%) 0px 0px 0px 1px, rgb(15 15 15 / 5%) 0px 2px 4px;
+	box-shadow: rgb(15 15 15 / 5%) 0px 0px 0px 1px,
+		rgb(15 15 15 / 5%) 0px 2px 4px;
 }
 
 footer {
@@ -159,11 +195,25 @@ footer p {
 	#mobile_menu {
 		display: block;
 	}
+
 	.team-content {
 		margin-top: 3rem;
 		margin-bottom: 3rem;
 		align-items: none;
 		height: auto;
+	}
+	.team-content h1 {
+		text-align: center;
+	}
+	.team-content h3 {
+		text-align: center;
+	}
+
+	.line {
+		display: none;
+	}
+	.member-text {
+		text-align: center;
 	}
 }
 @media only screen and (max-width: 600px) {

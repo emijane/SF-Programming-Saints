@@ -3,7 +3,7 @@ new TypeIt("#typewrite", {
 	waitUntilVisible: true,
 	loop: true,
 })
-	.type("Santa Fe College's Programming & Analysis Club")
+	.type("Accepting new members!")
 	.pause(2000)
 	.delete(undefined, {
 		speed: 150,
